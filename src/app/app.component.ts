@@ -1,10 +1,10 @@
-import { Component } from '@angular/core';
-import { HeaderComponent } from './header/header.component';
-import { NotesListComponent } from './notes-list/notes-list.component';
-import { NgFor } from '@angular/common';
-import { FormsModule } from '@angular/forms';
-import { ReactiveFormsModule } from '@angular/forms';
-import { FormGroup,FormControl } from '@angular/forms';
+import { Component } from '@angular/core'
+import { HeaderComponent } from './header/header.component'
+import { NotesListComponent } from './notes-list/notes-list.component'
+import { NgFor } from '@angular/common'
+import { FormsModule } from '@angular/forms'
+import { ReactiveFormsModule } from '@angular/forms'
+import { FormGroup, FormControl } from '@angular/forms'
 
 @Component({
   selector: 'app-root',
@@ -17,17 +17,16 @@ import { FormGroup,FormControl } from '@angular/forms';
     NotesListComponent,
     FormsModule,
     ReactiveFormsModule,
-  ], 
+  ],
 })
-
 
 export class AppComponent {
   login = new FormGroup({
-    username:new FormControl(''),
-    password:new FormControl('')
+    username: new FormControl(''),
+    password: new FormControl(''),
   })
-  name=new FormControl('');
-  showName(){
+  name = new FormControl('')
+  showName() {
     alert(this.name.value)
   }
 }
