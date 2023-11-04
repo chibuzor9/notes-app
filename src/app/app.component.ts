@@ -1,11 +1,8 @@
 import { Component } from '@angular/core';
 import { HeaderComponent } from './header/header.component';
 import { NotesListComponent } from './notes-list/notes-list.component';
-import { NgFor } from '@angular/common';
-import { FormsModule } from '@angular/forms';
-import { ReactiveFormsModule } from '@angular/forms';
-import { FormGroup, FormControl } from '@angular/forms';
-import { Validators } from '@angular/forms';
+import { AddNoteComponent } from './add-note/add-note.component';
+import { RouterModule } from '@angular/router';
 
 @Component({
 	selector: 'app-root',
@@ -14,20 +11,10 @@ import { Validators } from '@angular/forms';
 	styleUrls: ['./app.component.css'],
 	imports: [
 		HeaderComponent,
-		NgFor,
 		NotesListComponent,
-		FormsModule,
-		ReactiveFormsModule,
+		AddNoteComponent,
+		RouterModule
 	],
 })
 
-export class AppComponent {
-	loginForm = new FormGroup({
-		username: new FormControl('', Validators.required),
-		password: new FormControl('', Validators.required),
-	});
-	name = new FormControl('');
-	login() {
-		alert(this.loginForm.value.username + ' | ' + this.loginForm.value.password);
-	}
-}
+export class AppComponent { }

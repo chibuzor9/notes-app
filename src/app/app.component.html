@@ -1,5 +1,7 @@
-<app-header></app-header>
-<app-notes-list></app-notes-list>
+<app-header />
+<app-add-note />
+<app-notes-list />
+
 <!-- <form (ngSubmit)="showName()" #myForm="ngForm">
   <input type="text" [(ngModel)]="name" name="name" required />
   <input type="submit" value="Submit" [disabled]="!myForm.form.valid" />
@@ -10,8 +12,8 @@
   <input type="submit" value="Submit" />
 </form> -->
 
-<form [formGroup]="loginForm" (ngSubmit)="login()">
+<!-- <form [formGroup]="loginForm" (ngSubmit)="login()">
 	<p><input type="text" formControlName="username" /></p>
 	<p><input type="password" formControlName="password" /></p>
 	<input type="submit" value="Submit" [disabled]="!loginForm.valid" />
-</form>
+</form> -->
