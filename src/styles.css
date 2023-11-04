@@ -9,6 +9,9 @@ body {
   margin: 0;
   background-color: #edf1f5;
 }
+a{
+  text-decoration: none;
+}
 .container {
   text-align: center;
   margin: 0 auto;
@@ -28,6 +31,28 @@ body {
   text-align: left;
   color: gray;
   font-size: 10pt;
+}
+h2{
+  font-size: 15pt;
+}
+.button{
+  display: inline-block;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 10pt;
+  border: none;
+  text-decoration: none;
+}
+nav{
+  text-align: center;
+}
+.note-title{
+  display: block;
+  text-align: left;
+  font-weight: bold;
+  
 }
 input.ng-valid {
   background-color: #79ba6a;

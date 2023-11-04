@@ -9,9 +9,9 @@ import { NoteDetailComponent } from './app/note-detail/note-detail.component';
 const routes: Routes = [
     { path: '', component: NotesListComponent },
     { path: 'new', component: AddNoteComponent },
-    { path: 'note/:id', component: NoteDetailComponent }
+    { path: 'note/:id', component: NoteDetailComponent },
 ];
 
 bootstrapApplication(AppComponent, {
-    providers: [provideRouter(routes)]
+    providers: [provideRouter(routes)],
 });
