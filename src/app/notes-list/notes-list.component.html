@@ -1,13 +1,13 @@
 <div class="container">
-  <nav>
-    <button routerLink="./new"></button>
-  </nav>
-  <ul class="notes">
-    <li *ngFor="let note of notes">
-      <button (click)="show(note.title)">
-        <span class="note-title">{{ note.title }}</span>
-        <span class="note-text">{{ note.text }}</span>
-      </button>
-    </li>
-  </ul>
+	<nav>
+		<button routerLink="./new"></button>
+	</nav>
+	<ul class="notes">
+		<li *ngFor="let note of notes">
+			<button [routerLink]="['/note', note.id]">
+				<span class="note-title">{{ note.title }}</span>
+				<span class="note-text">{{ note.text }}</span>
+			</button>
+		</li>
+	</ul>
 </div>
