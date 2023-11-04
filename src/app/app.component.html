@@ -1,2 +1,4 @@
 <app-header></app-header>
-<p>App Component</p>
+<p [class.red]="isRed">App Component</p>
+<button (click)="change()">Switch Background Colour</button>
+<div *ngFor="let item of products">{{ item }}</div>
