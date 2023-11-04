@@ -1,62 +1,83 @@
 /* You can add global styles to this file, and also import other style files */
-@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400&display=swap');
 * {
-  font-family: "Fira Code", monospace;
+	font-family: 'Fira Code', monospace;
 }
 html,
 body {
-  padding: 0;
-  margin: 0;
-  background-color: #edf1f5;
+	padding: 0;
+	margin: 0;
+	background-color: #edf1f5;
 }
-a{
-  text-decoration: none;
+a {
+	text-decoration: none;
 }
 .container {
-  text-align: center;
-  margin: 0 auto;
-  padding: 15px;
+	text-align: center;
+	margin: 0 auto;
+	padding: 15px;
 }
 .note-title {
-  display: block;
-  text-align: left;
-  font-weight: bold;
-  margin-bottom: 5px;
-  text-transform: uppercase;
-  font-size: 11pt;
-  color: #000;
+	display: block;
+	text-align: left;
+	font-weight: bold;
+	margin-bottom: 5px;
+	text-transform: uppercase;
+	font-size: 11pt;
+	color: #000;
 }
 .note-text {
-  display: block;
-  text-align: left;
-  color: gray;
-  font-size: 10pt;
+	display: block;
+	text-align: left;
+	color: gray;
+	font-size: 10pt;
 }
-h2{
-  font-size: 15pt;
+h2 {
+	font-size: 15pt;
 }
-.button{
-  display: inline-block;
-  padding: 10px;
-  border-radius: 20px;
-  background-color: #007bff;
-  color: #fff;
-  font-size: 10pt;
-  border: none;
-  text-decoration: none;
+.button {
+	display: inline-block;
+	padding: 10px;
+	border-radius: 20px;
+	background-color: #007bff;
+	color: #fff;
+	font-size: 10pt;
+	border: none;
+	text-decoration: none;
 }
-nav{
-  text-align: center;
+nav {
+	text-align: center;
 }
-.note-title{
-  display: block;
-  text-align: left;
-  font-weight: bold;
-  
+.note-title {
+	display: block;
+	text-align: left;
+	font-weight: bold;
+	margin-bottom: 5px;
+	text-transform: uppercase;
+	font-size: 11pt;
+	color: #000;
 }
-input.ng-valid {
-  background-color: #79ba6a;
+.note-text {
+	display: block;
+	text-align: left;
+	color: gray;
+	font-size: 8pt;
 }
-input.ng-invalid {
-  background-color: #f58c84;
+.note-id {
+	display: block;
+	text-align: left;
+	color: gray;
+	font-size: 8pt;
+}
+nav button {
+	width: auto;
+	display: inline-block;
+	padding: 10px;
+	border-radius: 20px;
+	background-color: #007bff;
+	color: #fff;
+	font-size: 10pt;
+	border: none;
+	text-decoration: none;
+	cursor: pointer;
 }
