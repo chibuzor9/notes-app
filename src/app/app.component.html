@@ -5,7 +5,13 @@
   <input type="submit" value="Submit" [disabled]="!myForm.form.valid" />
 </form> -->
 
-<form (submit)="showName()">
+<!-- <form (submit)="showName()">
   <input type="text" [formControl]="name" name="name" />
   <input type="submit" value="Submit" />
+</form> -->
+
+<form [formGroup]="loginForm" (ngSubmit)="login()">
+	<p><input type="text" formControlName="username" /></p>
+	<p><input type="password" formControlName="password" /></p>
+	<input type="submit" value="Submit" [disabled]="!loginForm.valid" />
 </form>

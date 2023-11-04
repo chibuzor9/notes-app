@@ -5,6 +5,7 @@ import { NgFor } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormGroup, FormControl } from '@angular/forms';
+import { Validators } from '@angular/forms';
 
 @Component({
 	selector: 'app-root',
@@ -19,13 +20,14 @@ import { FormGroup, FormControl } from '@angular/forms';
 		ReactiveFormsModule,
 	],
 })
+
 export class AppComponent {
-	logon = new FormGroup({
-		username: new FormControl(''),
-		password: new FormControl(''),
+	loginForm = new FormGroup({
+		username: new FormControl('', Validators.required),
+		password: new FormControl('', Validators.required),
 	});
 	name = new FormControl('');
-	showName() {
-		alert(this.name.value);
+	login() {
+		alert(this.loginForm.value.username + ' | ' + this.loginForm.value.password);
 	}
 }
