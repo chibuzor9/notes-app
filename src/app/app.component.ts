@@ -3,6 +3,8 @@ import { HeaderComponent } from './header/header.component';
 import { NotesListComponent } from './notes-list/notes-list.component';
 import { NgFor } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
+import { FormGroup,FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -13,14 +15,19 @@ import { FormsModule } from '@angular/forms';
     HeaderComponent,
     NgFor,
     NotesListComponent,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule,
   ], 
 })
 
 
 export class AppComponent {
-  name="";
+  login = new FormGroup({
+    username:new FormControl(''),
+    password:new FormControl('')
+  })
+  name=new FormControl('');
   showName(){
-    alert(this.name)
+    alert(this.name.value)
   }
 }

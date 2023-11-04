@@ -1,6 +1,11 @@
 <app-header></app-header>
 <app-notes-list></app-notes-list>
-<form (ngSubmit)="showName()" #myForm="ngForm">
+<!-- <form (ngSubmit)="showName()" #myForm="ngForm">
   <input type="text" [(ngModel)]="name" name="name" required />
   <input type="submit" value="Submit" [disabled]="!myForm.form.valid" />
+</form> -->
+
+<form (submit)="showName()">
+  <input type="text" [formControl]="name" name="name" />
+  <input type="submit" value="Submit" />
 </form>
