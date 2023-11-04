@@ -20,7 +20,7 @@ import { FormGroup, FormControl } from '@angular/forms';
 	],
 })
 export class AppComponent {
-	login = new FormGroup({
+	logon = new FormGroup({
 		username: new FormControl(''),
 		password: new FormControl(''),
 	});
