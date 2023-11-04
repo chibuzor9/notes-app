@@ -1,4 +1,6 @@
 <app-header></app-header>
-<p [class.red]="isRed">App Component</p>
-<button (click)="change()">Switch Background Colour</button>
-<div *ngFor="let item of products">{{ item }}</div>
+<app-notes-list></app-notes-list>
+<form (ngSubmit)="showName()" #myForm="ngForm">
+  <input type="text" [(ngModel)]="name" name="name" required />
+  <input type="submit" value="Submit" [disabled]="!myForm.form.valid" />
+</form>

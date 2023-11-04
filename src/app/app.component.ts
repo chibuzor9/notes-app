@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { HeaderComponent } from './header/header.component';
+import { NotesListComponent } from './notes-list/notes-list.component';
 import { NgFor } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -9,15 +11,16 @@ import { NgFor } from '@angular/common';
   styleUrls: ['./app.component.css'],
   imports: [
     HeaderComponent,
-    NgFor
+    NgFor,
+    NotesListComponent,
+    FormsModule
   ], 
 })
 
 
 export class AppComponent {
-  isRed = false;
-  change(){
-    this.isRed = !this.isRed;
-  };
-  products = ['apple', 'orange', 'banana']
+  name="";
+  showName(){
+    alert(this.name)
+  }
 }

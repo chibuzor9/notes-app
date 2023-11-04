@@ -11,7 +11,7 @@ export const NOTES : Note[] = [
     },
     {
         id : 2,
-        title : 'Shakesspeare',
+        title : 'Shakespeare',
         text : 'He formed the word Assasination into existence'
     }
 ];
